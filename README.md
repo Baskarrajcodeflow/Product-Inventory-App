@@ -53,6 +53,19 @@ total_price int NOT NULL,
 invoice_id int NOT NULL
 )
 ```
+## ENV File For Backend (Nest JS)
+```
+# PORT
+PORT=3001
+
+# DATABASE CONFIGRATION VARIABLES
+## DATABASE TYPE
+DB_TYPE='mysql'
+DB_PORT=3306
+DB_HOST= 127.0.0.1
+DB_USERNAME= root
+DB_PASSWORD ='db@12345'
+```
 # Login Page
 ![Screenshot 2024-03-08 104214](https://github.com/Baskarrajcodeflow/Product-Inventory-App/assets/149696470/1b01e5f6-b8db-4f30-b37a-aeea1029873e)
 # Sign Up Page
