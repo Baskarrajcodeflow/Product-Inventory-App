@@ -11,7 +11,15 @@ To Install Nest JS - npm i -g @nestjs/cli
 To create a new react Project - nest new project-name
 To Run a Nest JS Project - npm run start:dev
 ```
-
+Commands For Database(MYSQL):
+```
+Create Database:
+### Database Name - server_db(Can Chnage it according to the Organization needs)
+Tables Used in Database:
+1.user_registration_table
+2.user_inventory_table
+3.user_generated_invoice_table
+```
 
 # Login Page
 ![Screenshot 2024-03-08 104214](https://github.com/Baskarrajcodeflow/Product-Inventory-App/assets/149696470/1b01e5f6-b8db-4f30-b37a-aeea1029873e)
