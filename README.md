@@ -7,3 +7,9 @@
 ts 
 # Add User Inventory Produc
 ![Screenshot 2024-03-08 105123](https://github.com/Baskarrajcodeflow/Product-Inventory-App/assets/149696470/72c2165a-1f0c-4fad-a7f7-870303d274ef)
+# Add Products For Invoice
+![Screenshot 2024-03-08 110032](https://github.com/Baskarrajcodeflow/Product-Inventory-App/assets/149696470/670a009e-16af-47c5-b2e2-5df99b00e12a)
+# Generate Invoice For Selected Products
+ ![Screenshot 2024-03-08 110135](https://github.com/Baskarrajcodeflow/Product-Inventory-App/assets/149696470/fc45d5ad-fded-4e3c-89f1-798b8094c207)
+# Generated User Invoice Records
+![Screenshot 2024-03-08 110703](https://github.com/Baskarrajcodeflow/Product-Inventory-App/assets/149696470/0e8829cb-915d-45b3-92c7-cfdf0053b826)
