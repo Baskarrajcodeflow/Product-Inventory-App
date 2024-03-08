@@ -1,8 +1,13 @@
 Commands Set Up And Execute Frontend Project:
 ```
 To create a new react Project - npx-create-react-app
-git add
-git commit
+To Run a react Project - npm start
+```
+Commands Set Up And Execute Backend(Nest JS) Project:
+```
+To Install Nest JS - npm i -g @nestjs/cli
+To create a new react Project - nest new project-name
+To Run a Nest JS Project - npm run start:dev
 ```
 
 # Login Page
