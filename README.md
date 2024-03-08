@@ -5,7 +5,7 @@
 # All User Inventory Product Details
 ![Screenshot 2024-03-08 105902](https://github.com/Baskarrajcodeflow/Product-Inventory-App/assets/149696470/09ab74f3-52ce-4b79-8806-0be6f728114c)
 ts 
-# Add User Inventory Produc
+# Add User Inventory Product
 ![Screenshot 2024-03-08 105123](https://github.com/Baskarrajcodeflow/Product-Inventory-App/assets/149696470/72c2165a-1f0c-4fad-a7f7-870303d274ef)
 # Add Products For Invoice
 ![Screenshot 2024-03-08 110032](https://github.com/Baskarrajcodeflow/Product-Inventory-App/assets/149696470/670a009e-16af-47c5-b2e2-5df99b00e12a)
