@@ -1,6 +1,6 @@
-Some basic Git commands are:
+Commands Set Up And Execute Frontend Project:
 ```
-git status
+To create a new react Project - npx-create-react-app
 git add
 git commit
 ```
