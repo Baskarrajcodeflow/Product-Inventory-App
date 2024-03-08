@@ -12,13 +12,47 @@ To Run a Nest JS Project - npm run start:dev
 Commands For Database(MYSQL):
 ```
 Create Database:
-***Database Name - server_db(Can Chnage it according to the Organization needs)
+Database Name - server_db(Can Chnage it according to the Organization needs)
 Tables Used in Database:
 1.user_registration_table
 2.user_inventory_table
 3.user_generated_invoice_table
 ```
-
+Commands For Table(MYSQL):
+1.user_registration_table
+```
+create table user_registration_table 
+(
+id int primary key auto_increment,
+user_name varchar(50) not null,
+user_email_id varchar(50) not null,
+user_password int not null
+)
+```
+2.user_inventory_table
+```
+CREATE TABLE user_inventory_table (
+id int NOT NULL AUTO_INCREMENT,
+product_name varchar(100) NOT NULL,
+product_description varchar(100) NOT NULL,
+product_quantity int NOT NULL,
+product_price int NOT NULL,
+user_id int NOT NULL,
+PRIMARY KEY (id)
+) 
+```
+3.user_generated_invoice_table
+```
+CREATE TABLE user_generated_invoice_table` (
+user_id int NOT NULL,
+product_name varchar(100) NOT NULL,
+product_description varchar(100) NOT NULL,
+product_quantity int NOT NULL,
+product_price int NOT NULL,
+total_price int NOT NULL,
+invoice_id int NOT NULL
+)
+```
 # Login Page
 ![Screenshot 2024-03-08 104214](https://github.com/Baskarrajcodeflow/Product-Inventory-App/assets/149696470/1b01e5f6-b8db-4f30-b37a-aeea1029873e)
 # Sign Up Page
