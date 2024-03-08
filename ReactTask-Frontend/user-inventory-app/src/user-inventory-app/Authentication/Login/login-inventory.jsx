@@ -5,7 +5,7 @@ import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import Button from "@mui/material/Button";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import image from "../../assets/user-avatar.png";
 import ApiService from "../../ApiService/api-service.tsx";
@@ -47,16 +47,20 @@ const LoginPage = () => {
 
   //------------------------------------Verify User Credentials Api Url To Login-----------------------//
   const checkLoginForUser = () => {
-    ApiService.checkUserCredentialsMethod(username, password).then((res) => {
-      if (res?.data?.statusCode === 200) {
-        sessionStorage.removeItem("jwt_token");
-        sessionStorage.setItem("jwt_token", res.data.jwt_token);
-        navigate("/products");
-        window.location.reload();
-      } else {
-        alert(res.data.message);
-      }
-    });
+    ApiService.checkUserCredentialsMethod(username, password)
+      .then((res) => {
+        if (res?.data?.statusCode === 200) {
+          sessionStorage.removeItem("jwt_token");
+          sessionStorage.setItem("jwt_token", res.data.jwt_token);
+          navigate("/products");
+          window.location.reload();
+        } else {
+          toast.error(res.message);
+        }
+      })
+      .catch((error) => {
+        toast.error(error.message);
+      });
   };
   //----------------------------------------------------------Login Form------------------------------------//
   return (
@@ -113,7 +117,7 @@ const LoginPage = () => {
                 >
                   Login
                 </Button>
-                <ToastContainer />
+                <ToastContainer position="bottom-center" autoClose={400} />
                 <Button
                   style={{ backgroundColor: "red", color: "white" }}
                   onClick={() => navigate("/register")}

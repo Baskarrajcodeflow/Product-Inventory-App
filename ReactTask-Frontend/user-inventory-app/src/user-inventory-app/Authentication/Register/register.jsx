@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import Button from "@mui/material/Button";
 import image from "../../assets/user-avatar.png";
 import ApiService from "../../ApiService/api-service.tsx";
+import { ToastContainer, toast } from "react-toastify";
 
 //-----------------------------------Input Field Validation-----------------------------------//
 const required = (value) => {
@@ -77,14 +78,18 @@ const Register = () => {
       user_password: password,
     };
 
-    ApiService.RegisterUserDataApiURL(registerUserData).then((res) => {
-      console.log(res);
-      if (res?.status === 201) {
-        navigate("/login");
-      } else {
-        alert(res?.data.message);
-      }
-    });
+    ApiService.RegisterUserDataApiURL(registerUserData)
+      .then((res) => {
+        console.log(res);
+        if (res?.status === 201) {
+          navigate("/login");
+        } else {
+          toast.error(res.message);
+        }
+      })
+      .catch((err) => {
+        toast.error(err.message);
+      });
   };
   //----------------------------------------------------------Registration Form------------------------------------//
   return (
@@ -142,7 +147,6 @@ const Register = () => {
                 >
                   Sign Up
                 </Button>
-
                 <Button
                   style={{
                     backgroundColor: "green",
@@ -155,6 +159,7 @@ const Register = () => {
                   GO BACK
                 </Button>
               </div>
+              <ToastContainer position="bottom-center" autoClose={400} />
             </div>
           )}
 
