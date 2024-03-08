@@ -1,14 +1,17 @@
-Commands Set Up And Execute Frontend Project:
+Commands To Set Up And Execute Frontend Project:
 ```
 To create a new react Project - npx-create-react-app
 To Run a react Project - npm start
+
+### dd
 ```
-Commands Set Up And Execute Backend(Nest JS) Project:
+Commands To Set Up And Execute Backend(Nest JS) Project:
 ```
 To Install Nest JS - npm i -g @nestjs/cli
 To create a new react Project - nest new project-name
 To Run a Nest JS Project - npm run start:dev
 ```
+
 
 # Login Page
 ![Screenshot 2024-03-08 104214](https://github.com/Baskarrajcodeflow/Product-Inventory-App/assets/149696470/1b01e5f6-b8db-4f30-b37a-aeea1029873e)
