@@ -2,8 +2,6 @@ Commands To Set Up And Execute Frontend Project:
 ```
 To create a new react Project - npx-create-react-app
 To Run a react Project - npm start
-
-### dd
 ```
 Commands To Set Up And Execute Backend(Nest JS) Project:
 ```
@@ -14,7 +12,7 @@ To Run a Nest JS Project - npm run start:dev
 Commands For Database(MYSQL):
 ```
 Create Database:
-### Database Name - server_db(Can Chnage it according to the Organization needs)
+***Database Name - server_db(Can Chnage it according to the Organization needs)
 Tables Used in Database:
 1.user_registration_table
 2.user_inventory_table
